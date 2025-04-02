@@ -15,7 +15,7 @@ struct UsersListScreen: View {
     
     var body: some View {
         NavigationView {
-//            List {
+            List {
 //                ForEach($users, id: \.self) { user in
 //                    if let email = user.email {
 //                        NavigationLink {
@@ -25,20 +25,20 @@ struct UsersListScreen: View {
 //                        }
 //                    }
 //                }
-//            }
-//            .navigationTitle("Пользователи")
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    NavigationLink {
-//                        RegistrationScreen()
-//                    } label: {
-//                        Image(systemName: "plus")
-//                    }
-//                }
-//            }
-//            .onAppear {
-//                users = CoreDataManager.shared.fetchUsers()
-//            }
+            }
+            .navigationTitle("Пользователи")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        RegistrationScreen()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+            .onAppear {
+                users = CoreDataManager.shared.fetchUsers()
+            }
         }
     }
 }

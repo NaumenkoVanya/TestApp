@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct UserAuthApp: App {
+struct TestAppApp: App {
     @StateObject private var appState = AppState()
     @State private var showSplash = true
     

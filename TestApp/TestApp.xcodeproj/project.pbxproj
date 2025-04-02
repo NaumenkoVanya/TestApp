@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		13B46C1D2D9DD83200F47F3D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B46C1C2D9DD83200F47F3D /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		13B46BD22D9DCA2900F47F3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,25 @@
 		13B46BC12D9DCA2600F47F3D /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B46BD12D9DCA2900F47F3D /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B46BDB2D9DCA2900F47F3D /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B46C1C2D9DD83200F47F3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		13B46C182D9DCF6B00F47F3D /* Exceptions for "TestApp" folder in "TestApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 13B46BC02D9DCA2600F47F3D /* TestApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		13B46BC32D9DCA2600F47F3D /* TestApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				13B46C182D9DCF6B00F47F3D /* Exceptions for "TestApp" folder in "TestApp" target */,
+			);
 			path = TestApp;
 			sourceTree = "<group>";
 		};
@@ -59,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B46C1D2D9DD83200F47F3D /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,7 @@
 				13B46BC32D9DCA2600F47F3D /* TestApp */,
 				13B46BD42D9DCA2900F47F3D /* TestAppTests */,
 				13B46BDE2D9DCA2900F47F3D /* TestAppUITests */,
+				13B46C1B2D9DD83200F47F3D /* Frameworks */,
 				13B46BC22D9DCA2600F47F3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +110,14 @@
 				13B46BDB2D9DCA2900F47F3D /* TestAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		13B46C1B2D9DD83200F47F3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13B46C1C2D9DD83200F47F3D /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +427,7 @@
 				DEVELOPMENT_TEAM = VY6BU9F56X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +457,7 @@
 				DEVELOPMENT_TEAM = VY6BU9F56X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
